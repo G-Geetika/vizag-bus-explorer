@@ -1,3 +1,4 @@
+
 export interface Destination {
   id: string;
   name: string;
@@ -38,6 +39,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Gurudwara", "Beach Road"],
         frequency: "Every 25 minutes",
         duration: "40 mins"
+      },
+      {
+        busNumber: "10K",
+        from: "Railway Station",
+        to: "RK Beach",
+        via: ["Dondaparthy", "Asilmetta", "Beach Road"],
+        frequency: "Every 20 minutes",
+        duration: "25 mins"
+      },
+      {
+        busNumber: "900K",
+        from: "Airport",
+        to: "RK Beach",
+        via: ["Maddilapalem", "Siripuram", "Beach Road"],
+        frequency: "Every 30 minutes",
+        duration: "45 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/gqdZnqKpnH8Wzt2r6"
@@ -63,6 +80,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Beach Road", "GITAM University"],
         frequency: "Every 45 minutes",
         duration: "60 mins"
+      },
+      {
+        busNumber: "22",
+        from: "Railway Station",
+        to: "Rushikonda Beach",
+        via: ["Jagadamba Junction", "Beach Road", "Yendada"],
+        frequency: "Every 35 minutes",
+        duration: "50 mins"
+      },
+      {
+        busNumber: "555",
+        from: "Airport",
+        to: "Rushikonda Beach",
+        via: ["Maddilapalem", "MVP Colony", "Sagar Nagar"],
+        frequency: "Every 40 minutes",
+        duration: "65 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/rC7h7ZEfzA8rC5at7"
@@ -88,6 +121,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Gurudwara"],
         frequency: "Every 25 minutes",
         duration: "45 mins"
+      },
+      {
+        busNumber: "300",
+        from: "Railway Station",
+        to: "VUDA Park",
+        via: ["Dwaraka Bus Station", "Diamond Park", "Beach Road"],
+        frequency: "Every 20 minutes",
+        duration: "30 mins"
+      },
+      {
+        busNumber: "444",
+        from: "Airport",
+        to: "VUDA Park",
+        via: ["Gopalapatnam", "Siripuram", "Beach Road"],
+        frequency: "Every 35 minutes",
+        duration: "50 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/conLfotxNrcXV2166"
@@ -113,6 +162,14 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Pendurthi", "Anandapuram"],
         frequency: "Every 90 minutes",
         duration: "120 mins"
+      },
+      {
+        busNumber: "575",
+        from: "Railway Station",
+        to: "Devarpalli",
+        via: ["Gopalapatnam", "Pendurthi", "Sabbavaram"],
+        frequency: "Every 75 minutes",
+        duration: "100 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/pKyW5vHq3b4dmLe99"
@@ -138,6 +195,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Gopalapatnam"],
         frequency: "Every 40 minutes",
         duration: "55 mins"
+      },
+      {
+        busNumber: "65F",
+        from: "Railway Station",
+        to: "Simhachalam",
+        via: ["Jagadamba", "Hanumanthawaka"],
+        frequency: "Every 25 minutes",
+        duration: "40 mins"
+      },
+      {
+        busNumber: "99T",
+        from: "Airport",
+        to: "Simhachalam",
+        via: ["NAD Junction", "Kancharapalem", "Gopalapatnam"],
+        frequency: "Every 30 minutes",
+        duration: "50 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/fEiNZD9qomV75rSs6"
@@ -163,6 +236,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Seethammadhara"],
         frequency: "Every 45 minutes",
         duration: "50 mins"
+      },
+      {
+        busNumber: "333",
+        from: "Railway Station",
+        to: "Zoo Park",
+        via: ["Jagadamba Junction", "Beach Road", "Sagar Nagar"],
+        frequency: "Every 25 minutes",
+        duration: "40 mins"
+      },
+      {
+        busNumber: "800K",
+        from: "Airport",
+        to: "Zoo Park",
+        via: ["Gopalapatnam", "Hanumanthawaka", "Seethammadhara"],
+        frequency: "Every 35 minutes",
+        duration: "55 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/QmBSy5HAhJfPHVbL8"
@@ -188,6 +277,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Convent Junction"],
         frequency: "Every 40 minutes",
         duration: "55 mins"
+      },
+      {
+        busNumber: "29",
+        from: "Railway Station",
+        to: "Ross Hill",
+        via: ["Gnanapuram", "Old Town"],
+        frequency: "Every 20 minutes",
+        duration: "25 mins"
+      },
+      {
+        busNumber: "50",
+        from: "Airport",
+        to: "Ross Hill",
+        via: ["Gopalapatnam", "Kancharapalem", "Convent Junction"],
+        frequency: "Every 35 minutes",
+        duration: "50 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/uWLXtUxDsF5AQGfk8"
@@ -213,6 +318,22 @@ export const destinations: Destination[] = [
         via: ["NAD Junction", "Seethammadhara", "MVP Colony"],
         frequency: "Every 45 minutes",
         duration: "60 mins"
+      },
+      {
+        busNumber: "22",
+        from: "Railway Station",
+        to: "Kailasagiri",
+        via: ["Siripuram", "MVP Colony", "Yendada"],
+        frequency: "Every 40 minutes",
+        duration: "50 mins"
+      },
+      {
+        busNumber: "777",
+        from: "Airport",
+        to: "Kailasagiri",
+        via: ["Gopalapatnam", "Hanumanthawaka", "MVP Colony"],
+        frequency: "Every 50 minutes",
+        duration: "65 mins"
       }
     ],
     mapUrl: "https://goo.gl/maps/QJ7hXBZ2gujk5Wye9"

@@ -1,3 +1,4 @@
+
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "@/components/Navbar";
@@ -13,7 +14,7 @@ import {
 } from "@/components/ui/select";
 import { startingPoints, destinations } from "@/data/destinations";
 import DestinationCard from "@/components/DestinationCard";
-import { MapPin, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 
 const Search = () => {
   const navigate = useNavigate();
@@ -34,7 +35,7 @@ const Search = () => {
         <div className="container mx-auto px-4 py-8">
           <h1 className="text-3xl font-bold mb-8 text-center text-[#2E2E2E]">Plan Your Journey</h1>
           
-          <Card className="mb-12 max-w-3xl mx-auto bg-white">
+          <Card className="mb-12 max-w-3xl mx-auto bg-white shadow-md">
             <CardContent className="p-6">
               <div className="space-y-6">
                 <div>
@@ -45,7 +46,13 @@ const Search = () => {
                       <label className="block text-sm font-medium text-[#2E2E2E] mb-1">
                         Starting Point
                       </label>
-                      <Select onValueChange={setSelectedStartingPoint} value={selectedStartingPoint}>
+                      <Select 
+                        onValueChange={value => {
+                          setSelectedStartingPoint(value);
+                          setSelectedDestination(undefined); // Reset destination when starting point changes
+                        }} 
+                        value={selectedStartingPoint}
+                      >
                         <SelectTrigger className="bg-white border-[#007F91] focus:ring-[#007F91]">
                           <SelectValue placeholder="Select starting point" />
                         </SelectTrigger>
@@ -103,7 +110,7 @@ const Search = () => {
                 
                 <div className="pt-4">
                   <Button 
-                    className="w-full bg-[#007F91] hover:bg-[#006d7c] text-white"
+                    className="w-full bg-[#007F91] hover:bg-[#007F91]/80 text-white"
                     disabled={!selectedStartingPoint || !selectedDestination}
                     onClick={handlePlanJourney}
                   >

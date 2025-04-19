@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -85,10 +86,43 @@
   
   .destination-card {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    @apply bg-white overflow-hidden rounded-lg shadow-md;
   }
   
   .destination-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  }
+  
+  .btn-primary {
+    @apply bg-[#007F91] hover:bg-[#007F91]/80 text-white;
+  }
+  
+  .btn-secondary {
+    @apply bg-[#FF6B6B] hover:bg-[#FF6B6B]/80 text-white;
+  }
+  
+  .btn-accent {
+    @apply bg-[#3DBE8B] hover:bg-[#3DBE8B]/80 text-white;
+  }
+  
+  .text-primary {
+    @apply text-[#007F91];
+  }
+  
+  .text-secondary {
+    @apply text-[#FF6B6B];
+  }
+  
+  .text-accent {
+    @apply text-[#3DBE8B];
+  }
+  
+  .text-base {
+    @apply text-[#2E2E2E];
+  }
+  
+  .bg-base {
+    @apply bg-[#F6EEDF];
   }
 }

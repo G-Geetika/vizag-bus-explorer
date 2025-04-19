@@ -1,4 +1,3 @@
-
 export interface Destination {
   id: string;
   name: string;
@@ -222,7 +221,15 @@ export const destinations: Destination[] = [
 
 export const startingPoints = [
   { id: "railway-station", name: "Railway Station" },
-  { id: "airport", name: "Airport" }
+  { id: "airport", name: "Airport" },
+  { id: "rk-beach", name: "RK Beach" },
+  { id: "rushikonda-beach", name: "Rushikonda Beach" },
+  { id: "vuda-park", name: "VUDA Park" },
+  { id: "devarpalli-waterfalls", name: "Devarpalli Waterfalls" },
+  { id: "simhachalam", name: "Simhachalam Temple" },
+  { id: "zoo-park", name: "Zoo Park" },
+  { id: "ross-hill-church", name: "Ross Hill Church" },
+  { id: "kailasagiri", name: "Kailasagiri" },
 ];
 
 export const getDestination = (id: string): Destination | undefined => {
